@@ -1,0 +1,99 @@
+.area{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 24px;
+    padding-left: 35px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.add-div{
+    display: flex;
+    justify-content: end;
+    height: 50px;
+}
+
+.add-btn{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    cursor: pointer;
+    background-color:rgb(52, 135, 243);
+}
+
+.table-div{
+    //width: 100%;
+    //overflow-x: hidden;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.table{
+    width: 100%;
+    text-align: left;
+    color: black;
+    background-color: white;
+    //border: 1px solid black;
+}
+
+.px-2{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.py-3{
+    padding-top:  14px; 
+    padding-bottom:  14px;
+}
+
+.action-btn{
+    display: flex;
+    gap:12px;
+}
+
+.action-btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+
+.cl1{
+    background-color: rgb(20, 227, 241);
+}
+
+.cl2{
+    background-color: rgb(224, 177, 23);
+}
+
+.cl3{
+    background-color: rgb(221, 35, 28);
+    color: white;
+    padding: 12px;
+}
+
+table {
+    border-collapse: collapse
+}
+
+td{
+    border: 1px solid rgb(238, 229, 229);
+    padding : 10px;
+}
+
+th{
+    border: 1px solid rgb(238, 229, 229);
+}
+
+.empty{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:12px;
+    margin-top: 0px;
+}

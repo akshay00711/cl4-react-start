@@ -1,0 +1,13 @@
+
+.w-1{
+    max-width: 680px;
+}
+.button-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-signup{
+    width: 96%;
+}
