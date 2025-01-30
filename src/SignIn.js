@@ -7,6 +7,7 @@ function SignIn() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
 
   const onSignIn = (e) => {
@@ -18,6 +19,10 @@ function SignIn() {
     localStorage.setItem("token", "sdsdsd");
     navigate("/dashboard", { replace: true });
   };
+
+  const toggleSwitch = () =>{
+    setVisible(!visible);
+  }
 
   return (
     <>
@@ -43,11 +48,11 @@ function SignIn() {
               <div className="password-field">
                 <input
                   onChange={(e) => setPassword(e.target.value)}
-                  type="password"
+                  type= {visible ? 'text' : 'password'}
                   placeholder="Enter password"
                   className="input"
                 />
-                <button className="button" type="button">
+                <button onClick={toggleSwitch} className="button" type="button">
                   eye
                 </button>
               </div>
